@@ -1,0 +1,11 @@
+# Variables that stores the correct pin and the user input
+correct_pin = "1121"
+entered_pin = ""
+
+# The loop will continue until user eneters the correct pin 
+while entered_pin != correct_pin:
+    entered_pin = input("Please enter the correct pin: ")
+    if entered_pin == correct_pin:
+        print("Access granted.")
+    else:
+        print("Incorrect pin. Please try again.")

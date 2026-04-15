@@ -1,0 +1,83 @@
+# This is an original code by janna mei campomayor
+# Ask the user to input 5 grades in 5 subjects 
+
+while True:
+    try:
+        Math_grade = int(input("Please enter the grade for Mathematics: "))
+        if Math_grade <= 0:
+            print("Invalid input. Please enter a positive number.")
+        else:
+            break
+    except ValueError:
+        print("Invalid input. Please enter a positive number.")
+
+while True:
+    try: 
+        Science_grade = int(input("Please enter the grade for Science: "))
+        if Science_grade <= 0:
+            print("Invalid input. Please enter a positive number.")
+        else:
+            break
+    except ValueError:
+        print("Invalid input. Please enter a positive number.")
+
+while True:
+    try:
+        English_grade = int(input("Please enter the grade for English: "))
+        if English_grade <= 0:
+            print("Invalid input. Please enter a positive number.")
+        else:
+            break
+    except ValueError:
+        print("Invalid input. Please enter a positive number.")
+
+while True:
+    try:
+        Computer_Science_grade = int(input("Please input the grade for Computer Science: "))
+        if Computer_Science_grade <= 0:
+            print("Invalid input. Please enter a positive number.")
+        else:
+            break
+    except ValueError:
+        print("Invalid input. Please enter a positive number.")
+
+while True:
+    try:
+        Social_Science_grade = int(input("Please input the grade for Social Science: "))
+        if Social_Science_grade <= 0:
+            print("Invalid input. Please enter a positive number.")
+        else:
+            break
+    except ValueError:
+        print("Invalid input. Please enter a positive number.")
+
+# Calculate the average of the 5 grades 
+        
+Average = (Math_grade + Science_grade + English_grade + Social_Science_grade + Computer_Science_grade) / 5
+
+# Determine if average is Excellent, Very Good, Good, etc., and give the equivalent grade to the user
+
+if Average >= 96 and Average <= 100:
+    print("Your Average Grade is:", Average, "Your Equivalent Grade is: 1.00, Remarks: Excellent")   
+elif Average >= 90 and Average <= 95.99:
+    print("Your Average Grade is:", Average, "Your Equivalent Grade is: 1.25, Remarks: Very Good")
+elif Average >= 84 and Average <= 89.99:
+    print("Your Average Grade is:", Average, "Your Equivalent Grade is: 1.50, Remarks: Very Good")
+elif Average >= 78 and Average <= 83.99:
+    print("Your Average Grade is:", Average, "Your Equivalent Grade is: 1.75, Remarks: Good")
+elif Average >= 72 and Average <= 77.99:
+    print("Your Average Grade is:", Average, "Your Equivalent Grade is: 2.00, Remarks: Good")
+elif Average >= 66 and Average <= 71.99:
+    print("Your Average Grade is:", Average, "Your Equivalent Grade is: 2.25, Remarks: Satisfactory")
+elif Average >= 60 and Average <= 65.99:
+    print("Your Average Grade is:", Average, "Your Equivalent Grade is: 2.50, Remarks: Satisfactory")
+elif Average >= 55 and Average <= 59.99:
+    print("Your Average Grade is:", Average, "Your Equivalent Grade is: 2.75, Remarks: Fair")
+elif Average >= 50 and Average <= 54.99:
+    print("Your Average Grade is:", Average, "Your Equivalent Grade is: 3.00, Remarks: Fair")
+elif Average >= 40 and Average <= 49.99:
+    print("Your Average Grade is:", Average, "Your Equivalent Grade is: 4.00, Remarks: Failed on condition")
+elif Average < 40:
+     print("Your Average Grade is:", Average, "Your Equivalent Grade is: 5.00, Remarks: Failed")
+
+# FINALLY! THE END!!
